@@ -1,10 +1,12 @@
 
+<img src="imagens/!blueballs 0boeiip.png" align="right" width="300">
+
 # PROJETOS
 Aqui estão meus primeiros projetos iniciando no HTML & CSS!
 
 ## HTML & CSS
 
-<img src="imagens/!blueballs 0boeiip.png" align="right" width="300">
+
 
 * [Projeto #1 - Android](https://darkstack16.github.io/HTML-CSS-PROJETOS/projeto1android/index.html)
 
