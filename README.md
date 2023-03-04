@@ -1,6 +1,8 @@
 
-# HTML-CSS-PROJETOS 
-MEUS PROJETOS EM HTML5 E CSS3
+# PROJETOS
+Aqui estão meus primeiros projetos iniciando no HTML & CSS!
+
+## HTML & CSS
 
 * [Projeto #1 - Android](https://darkstack16.github.io/HTML-CSS-PROJETOS/projeto1android/index.html)
 
