@@ -1,6 +1,13 @@
 
 <img src="imagens/!blueballs 0boeiip.png" align="right" width="300">
 
+<style>
+    body {
+        background-color: rgb(61, 61, 61);
+        color: white;
+    }
+</style>
+
 # PROJETOS
 Aqui estão meus primeiros projetos iniciando no HTML & CSS!
 
