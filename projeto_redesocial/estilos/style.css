@@ -49,10 +49,36 @@ iframe#tela {
     margin-right: 25px;
 }
 
+@keyframes mover {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -10px;
+        scale: 1.1;
+    }
+}
+
+div#homefundo {
+    background-color: #3A3A3A;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+#home:hover, #youtube:hover, #github:hover, #instagram:hover, #twitter:hover, #facebook:hover {
+    animation-duration: 400ms;
+    animation-name: mover;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
 .icone:active {
     box-shadow: inset 0px 0px 2px 1px white;
 }
-
 
 #youtube {
     position: relative;
@@ -112,4 +138,31 @@ iframe#tela {
     float: right;
     margin-top: 477px;
     margin-right: -71px;
+}
+
+footer {
+    user-select: none;
+    position: absolute;
+    display: block;
+    margin-top: 95vh;
+    margin-left: 35vw;
+}
+
+footer p {
+    font-size: 1.3em;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+}
+
+
+
+a {
+    text-decoration: none;
+    width: 0%;
+    color: gray;
+    text-shadow: 1px 1px 2px black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
