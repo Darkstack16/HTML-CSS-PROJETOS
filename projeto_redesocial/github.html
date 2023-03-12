@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0px;
+            padding:0px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: white;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgb(154, 154, 154);
+            border-radius: 20px;
+        }
+
+        body::-webkit-scrollbar-thumb:active {
+            background-color: rgb(88, 88, 88);
+            border-radius: 20px;
+        }
+
+        img {
+            width: 100%; 
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        div#fonte {
+            opacity: 0;
+            background-image: linear-gradient(rgb(0,0,0) -20%, rgb(243, 0, 0) 90%, rgb(0,0,0) 900%);
+            margin-top: -4px;
+            padding: 0px;
+            width: 100%;
+            animation-fill-mode: both;
+            animation-delay: 1.5s;
+            animation-duration: 1.5s;
+            animation-name: fade;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            color: white;
+            text-shadow: 0px 0px 20px black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="imagens/tela-github.jpg" alt="Canal do Youtube do Curso em Vídeo">
+    </div>
+    <a href="https://github.com/cursoemvideo" target="_blank">
+        <div id="fonte">
+            <h1>ACESSE</h1>
+        </div>
+    </a>
+    
+</body>
+</html>
