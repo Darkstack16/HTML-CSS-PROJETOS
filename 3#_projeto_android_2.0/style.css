@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "fonte";
+    src: url(fontes/idroid.otf);
+}
+    
+@font-face {
+    font-family: "fontemain";
+    src: url(fontes/Staatliches-Regular.ttf);
+}
+
+:root {
+    --cor1: rgb(0, 255, 115);
+    --cor2: rgb(0, 207, 93);
+    --cor3: rgb(0, 160, 72);
+    --cor5: rgb(0, 112, 50);
+    --cor6: rgb(0, 80, 36);
+    --cor7: rgb(0, 53, 24);
+    --sombratexto: 0px 0px 4px var(--cor1);
+
+
+}
+
+@keyframes cimabaixo {
+    from {
+        transform: translateY(-5px);
+        
+    }
+
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes aside {
+    from {
+        transform: translateY(-15px);
+        
+    }
+
+    to {
+        transform: translateY(-6px);
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gp {
+    from {
+        font-size: 1em;
+    }
+
+    to {
+        font-size: 1.2em;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+}
+
+
+body {
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-name: fade;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        text-indent: 20px;
+}
+
+
+header {
+    user-select: none;
+    display: block;
+    background-color:rgb(0, 0, 0);
+    box-shadow: -4px -8px 20px 20px rgba(0, 0, 0, 0.534);
+    margin-top: -38px;
+    width: 100%;
+    height: 250px;
+}
+
+h1#inicio {
+    position: relative;
+    font-family: 'fontemain', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 0px 0px 40px var(--cor3);
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: cimabaixo;
+    animation-delay: 0.7s;
+}
+
+header > p#main {
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.671);
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 587px) {
+    h1#inicio {
+        font-size: 3em;
+        padding-top: 64px;
+    }
+
+    img.desenho {
+        height: 200px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    p#main {
+        display: none;
+    }
+
+    article > p, main p {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    nav.sticky {
+        font-size: 0.9em;
+    }
+
+    p#main {
+        display: none;
+    }
+
+    #corpo h1, #corpo h2{
+        font-size: 1.2em;
+    }
+
+    #corpo p {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 352px) {
+    nav.sticky {
+        font-size: 0.8em;
+    }
+
+    p#main {
+        display: none;
+    }
+
+    #corpo h1, #corpo h2{
+        font-size: 1em;
+    }
+
+    #corpo p {
+        font-size: 0.8em;
+    }
+
+
+
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000;
+}
+
+nav > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 3px;
+    text-shadow: var(--sombratexto);
+    font-weight: bolder;
+    margin-left: 8px;
+    margin-top: 10px;
+    
+}
+
+
+
+nav > a:hover {
+    text-decoration: none;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: gp;
+}
+
+nav.sticky {
+    margin-top: -20px;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    z-index: 2;
+    box-shadow: -4px -8px 20px 20px rgba(0, 0, 0, 0.534);
+    user-select: none;
+}
+
+
+
+
+
+article > p, main p {
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+
+
+#corpo {
+    background-color: #0a0a0a;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+article, main p {
+    color: white;
+}
+
+main div.fundo {
+    background-color: rgb(2, 2, 2);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: -5px;
+}
+
+main h1, h2 {
+    padding: 9px;
+    color: white;
+    padding-left: 20px;
+    
+    font-weight: 100;
+    text-shadow: var(--sombratexto);
+    font-size: 2em;
+    font-family: "fonte";
+}
+
+article > h2 {
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    font-family: "fonte";
+    text-shadow: 0px 0px 7px var(--cor1);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 9px black;
+    border-radius: 30px;
+    
+}
+
+
+.video {
+    border: 1px solid transparent;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 50px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-name: aside;
+    animation-delay: 1s;
+
+
+    background-color: #1d1d1d;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    border-top-right-radius: 46px;
+    padding: 10px 10px 20px 10px;
+    max-width: 800px;
+    margin-top: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.527);
+}
+
+aside p {
+    color: white;
+}
+
+aside > h3 {
+    text-indent: 20px;   
+    display: block;
+    background-color: rgb(0, 0, 0);
+    margin-top: -10px;
+    margin-left: -11px;
+    margin-right: -10px;
+    max-width: 800px;
+    min-width: 320;
+    height: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: var(--sombratexto);
+}
+
+#baip {
+    color: white;
+}
+
+li {
+    color: white;
+    text-shadow: var(--sombratexto);
+}
+
+ul {
+    columns: 2;
+    list-style-position: inside;
+}
+
+
+#corpo a:hover {
+    text-decoration: underline;
+    text-shadow: 0px 0px 6px rgb(0, 150, 67);
+    transition: all 500ms;
+}
+
+#corpo p > a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px rgb(3, 156, 93);
+    font-weight: bolder;
+}
+
+#corpo > a:hover {
+    text-decoration: underline;
+}
+
+section > p#baip {
+    text-align: center;
+}
+
+aside > p {
+    font-weight: 400;
+}
+
+aside a:hover {
+    color: #ffffff;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px rgb(0, 255, 149);
+}
+
+span {
+    color: #ffffff;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px rgb(0, 255, 149);
+}
+
+footer {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    height: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2px;
+    padding-bottom: 13px;
+}
+
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+footer a, footer a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.05em;
+    text-shadow: var(--sombratexto);
+    transition: all 600ms ease;
+}
+
+

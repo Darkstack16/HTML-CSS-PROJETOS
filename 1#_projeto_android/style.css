@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "fonte";
+    src: url(fontes/idroid.otf);
+}
+    
+@font-face {
+    font-family: "fontemain";
+    src: url(fontes/Staatliches-Regular.ttf);
+}
+
+
+body {
+    background-color: #c1fada;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        text-indent: 20px;
+}
+
+
+header {
+    display: block;
+    background-image: linear-gradient(rgb(131, 255, 162), rgb(5, 75, 40) 100%);
+    box-shadow: -4px -8px 20px 20px rgba(0, 0, 0, 0.534);
+    margin-top: -27px;
+    width: 100%;
+    height: 250px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000;
+}
+
+header > nav > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 5px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 400ms ease-in-out;
+    text-shadow:0px 0px 17px rgb(2, 255, 99);
+    
+}
+
+header > p#main {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1#inicio {
+    font-family: 'fontemain', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin-left: 19px;
+    padding-top: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+
+article > p {
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+
+#corpo {
+    display: block;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+
+
+main > h1 {
+    color: rgb(0, 112, 0);
+    font-size: 2em;
+    font-family: "fonte";
+}
+
+article > h2 {
+    background-image: linear-gradient( 90deg, rgba(100, 250, 125, 0.411) 20%, rgba(0, 0, 0, 0));
+    color: rgb(0, 105, 0);
+    font-family: "fonte";
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
+.video {
+    background-color: #00883d;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #a1ffca;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    border-top-right-radius: 46px;
+    padding: 10px 10px 20px 10px;
+    max-width: 800px;
+    margin-top: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.527);
+}
+
+aside > h3 {
+    text-indent: 20px;;    display: block;
+    background-color: rgb(0, 184, 122);
+    margin-top: -9px;
+    margin-left: -10px;
+    margin-right: -9px;
+    max-width: 800px;
+    min-width: 320;
+    height: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+li {
+    text-decoration: underline;
+}
+
+ul {
+    columns: 2;
+    list-style-position: inside;
+}
+
+aside > p {
+    font-weight: 400;
+}
+
+span {
+    color: #00883d;
+    font-weight: bolder;
+}
+
+section p > a {
+    text-decoration: none;
+    color: #00883d;
+    font-weight: bolder;
+}
+
+section p > a:hover {
+    text-decoration: underline;
+}
+
+section > p#baip {
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(3, 97, 50);
+    height: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 6px;
+    padding-bottom: 13px;
+}
+
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    font-weight: bolder;
+    color: white;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0px 0px 9px rgb(1, 209, 95);
+    transition: all 500ms;
+}
