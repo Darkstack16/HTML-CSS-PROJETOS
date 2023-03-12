@@ -24,12 +24,12 @@
 
 @keyframes cimabaixo {
     from {
-        transform: translateY(-5px);
+        transform: translateY(-6px);
         
     }
 
     to {
-        transform: translateY(5px);
+        transform: translateY(6px);
     }
 }
 
@@ -40,7 +40,7 @@
     }
 
     to {
-        transform: translateY(-6px);
+        transform: translateY(-5px);
     }
 }
 
@@ -110,7 +110,7 @@ h1#inicio {
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-name: cimabaixo;
-    animation-delay: 0.7s;
+    animation-delay: 0s;
 }
 
 header > p#main {
@@ -321,7 +321,7 @@ aside {
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
     animation-name: aside;
-    animation-delay: 1s;
+    animation-delay: 0s;
 
 
     background-color: #1d1d1d;
