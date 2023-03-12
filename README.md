@@ -8,11 +8,11 @@ Aqui estão meus primeiros projetos iniciando no HTML & CSS!
 
 
 
-* [Projeto #1 - Android](https://darkstack16.github.io/HTML-CSS-PROJETOS/projeto1android/index.html)
+* [Projeto #1 - Android](https://darkstack16.github.io/HTML-CSS-PROJETOS/1#_projeto_android/index.html)
 
-* [Projeto #2 - Cordel](https://darkstack16.github.io/HTML-CSS-PROJETOS/projeto2cordel/index.html)
+* [Projeto #2 - Cordel](https://darkstack16.github.io/HTML-CSS-PROJETOS/2#_projeto_cordel/index.html)
 
-* [Projeto #3 - Android 2.0](https://darkstack16.github.io/HTML-CSS-PROJETOS/projeto2cordel/index.html)
+* [Projeto #3 - Android 2.0](https://darkstack16.github.io/HTML-CSS-PROJETOS/3#_projeto_android_2.0/index.html)
 
 
 
